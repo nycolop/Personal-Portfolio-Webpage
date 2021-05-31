@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 1.5s;
+}
+
+#navbar {
+    text-shadow: 1px 1px 1px #800080;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+#welcome-section {
+    /* padding-top: 0px;
+    margin-top: 0px; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at top, rgba(224, 217, 217, 0.8), transparent),
+    radial-gradient(ellipse at bottom, rgba(138, 129, 129, 0.8), transparent);
+    color: black;
+}
+
+#welcome-section h1 {
+    font-size: 5rem;
+    text-shadow: 1px 1px 1px purple;
+    font-family: 'Mate SC';
+}
+
+#welcome-section h2 {
+    font-size: 4rem;
+    text-shadow: 1px 1px 1px purple;
+    font-family: 'Mate SC';
+}
+
+#welcome-section h3 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px red;
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+#skills h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px purple;
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+nav {
+    background: linear-gradient(95deg, #0a0a0a, #181616);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 3px 1px purple;  /* Black theme #161616 */
+    position: fixed;
+    width: 100%;
+    z-index: 150;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 2% 2% 5%;
+    transition: 1.5s;
+    color: white;
+    opacity: 0.9;
+}
+
+nav ul li a {
+    color: white;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar li {
+    padding-right: 40px;
+    letter-spacing: 1.5px;
+}
+
+#navbar h1 {
+    cursor: pointer;
+}
+
+#navbar a,
+#contact a,
+article a  {
+    text-decoration: none;
+}
+
+#navbar li,
+#contact li {
+    list-style-type: none;
+}
+
+#projects h2 {
+    color: white;
+    padding: 50px 0 70px;
+    font-size: 40px;
+}
+
+#projects {
+    background: linear-gradient(95deg, #0a0a0a, #181616);
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid purple;
+}
+
+#projects p {
+    font-size: 25px;
+    color: white;
+    padding: 10px 0 10px 0;
+}
+
+#projects img:hover {
+    transform: scale(0.9);
+    transition: 1s;
+    filter: grayscale(1.1);
+}
+
+#grid-p {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+#skills {
+    background: radial-gradient(ellipse at top, #e0d9d9, transparent),
+    radial-gradient(ellipse at bottom, #8a8181, transparent);
+    height: 110vh;
+}
+
+#skills-distribution {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 35% 0 25%;
+    align-items: center;
+}
+
+#soft p {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+#skills h1 {
+    padding-top: 35px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+#soft {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+#hard img {
+    height: 40%;
+    width: 11%;
+    padding-top: 30px;
+}
+
+#hard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hard p {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+#about {
+    text-align: center;
+    padding: 4% 10px 10px 10px;
+    font-size: 19px;
+}
+
+#contact {
+    background: linear-gradient(45deg, rgb(107, 29, 107), #111111);
+    height: 50vh;
+}
+
+#contact ul li {
+    padding-right: 7%;
+    font-size: 20px;
+}
+
+#contact .cl1 {
+    padding-right: 5%;
+}
+
+#contact a {
+    color: white;
+}
+
+#contact .cp1,
+#contact .cp2 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+#contact .cp1 {
+    padding: 4% 0 0 0;
+}
+
+#contact .cp2 {
+    padding: 2% 0 0 0;
+}
+
+#contact ul {
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+    align-items: center;
+}
+
+#profile-mail img {
+    width: 60%;
+    height: 60%;
+}
+
+#profile-linkedin img {
+    width: 120%;
+    height: 120%;
+}
+
+#profile-link img {
+    width: 90%;
+    height: 90%;
+}
+
+#contact ul img:hover {
+    transform: scale(1.3) translateY(-15px);
+}
+
+footer {
+    background: linear-gradient(95deg, #0a0a0a, #181616);
+    color: white;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 1px 1px 3px 3px black;
+}
+
+footer .fp2 {
+    font-size: 17px;
+}
+
+footer .fp1 {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+footer .fp1 a {
+    color: rgb(117, 23, 117);
+}
+
+footer .fp1 a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+@media (max-width: 1500px) {
+    nav { 
+        padding: 3% 2% 3% 5%;
+        transition: 1.5s;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #navbar, header {
+        transition: 1.5s;
+    }
+    
+    header {
+        transition: 1.5s;
+    }
+
+    #navbar li {
+        padding-right: 20px;
+        transition: 1.5s;
+    }
+
+    nav {
+        padding: 5% 2% 5% 5%;
+    }
+
+    #hard img {
+        height: 70%;
+        width: 30%;
+    }
+}
+
+@media (max-width: 440px) {
+    #navbar ul {
+        flex-direction: column; 
+        transition: 1.5s;
+    }
+
+    #navbar ul li {
+        padding-top: 10px;
+    }
+
+    #navbar h1 {
+        padding-right: 5px;
+    }
+
+    nav {
+        padding: 3% 4% 6% 10%;
+    }
+}
+
+@media (min-height: 1000px) {
+    nav {
+        padding: 10% 4% 10% 10%;
+    }
+
+    #projects, .project-tile {
+        padding: 5px;
+    }
+}

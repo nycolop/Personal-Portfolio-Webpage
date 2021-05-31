@@ -5,16 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Webpage</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta author="necogamy">
 </head>
 <body>
+    <nav id="navbar">
+        <h1>Personal Webpage</h1>
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <section id="welcome-section">
-        <h1></h1>
+        <div>
+            <h1>Hello There!</h1>
+            <h2>I'm Nicolás López</h2>
+            <h3>a Web Developer</h3>
+        </div>
     </section>
+
     <section id="projects">
+        
+        <h2>Some of my projects</h2>
+        
+        <div id="grid-p">
         <article class="project-tile">
-            <a href=""></a>
+            <a href="https://necogamy.github.io/surveyForm/" target="_blank"><p>Survey Form</p>
+            <img src="media/survey.jpg" alt="A survey form project"></a>
         </article>
+        
+        <article class="project-tile">
+            <a href="https://necogamy.github.io/DaksaVideoWebpage/" target="_blank"><p>Daksa Services Enterprise</p>
+            <img src="media/daksa.jpg" alt="Daksa Services Project"></a>
+        </article>
+        
+        <article class="project-tile">
+            <a href="https://necogamy.github.io/productLandingPage/" target="_blank"><p>Product Landing Page</p>
+            <img src="media/kali.jpg" alt="Product Landing Page"></a>
+        </article>
+        </div>
     </section>
+    
+    <section id="skills">
+        <h1>About Me</h1>
+        <p id="about">For the moment I'm a Web Developer that only manages Css3, Html5, JavaScript & Bootstrap. But soon I will be a FullStack JavaScript Developer. How you can see, I have more Soft-Skills than Hard-Skills. I have a trajectory of 5 years working with Programming Languages, so my Problem Solving Skill is sophisticated.</p>
+        <div id="skills-distribution">
+            <div id="hard">
+                <h1><b>Hard Skills</b></h1>
+                <img class="hm1" src="data:image/png;base64,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" alt="js">
+                <p><b>JavaScript</b></p>
+                <img class="hm2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="html5">
+                <p><b>Html5</b></p>
+                <img class="hm3" src="https://www.jose-aguilar.com/blog/wp-content/uploads/2012/12/css3.png" alt="css3">
+                <p><b>Css3</b></p>
+                <img class="hm4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" alt="bootstrap">
+                <p><b>Bootstrap</b></p>
+            </div>
+            <div id="soft">
+                <h1>Soft Skills</h1>
+                <p>ProblemSolving</p>
+                <p>Research</p>
+                <p>Teamwork</p>
+                <p>Responsibility</p>
+                <p>Empathy</p>
+                <p>Positivity</p>
+                <p>Leadership</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <p class="cp1">If you want to contact me to work in your project, here's my contacts medias.</p>
+        <p class="cp2">I'm open to work.</p>
+        <ul>
+            <li class="cl1"><a id="profile-link" href="https://github.com/necogamy" target="_blank"><img src="media/github.png"></a></li>
+            <li><a id="profile-linkedin" href="https://www.linkedin.com/in/nicogamy" target="_blank"><img src="media/linkedin.png"></a></li>
+            <li><a id="profile-mail" href="mailto:madrazonecogamy@gmail.com"><img src="media/gmail.png"></a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p class="fp1">Maked with love by <a href="mailto:madrazonecogamy@gmail.com">Nicolás López</a> (nicogamy)</p>
+        <p class="fp2">All rights reserved © 2021</p>
+    </footer>
+
+
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
