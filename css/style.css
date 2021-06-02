@@ -381,6 +381,16 @@ footer .fp1 a:hover {
     nav {
         padding: 3% 4% 6% 10%;
     }
+
+    #welcome-section h1 {
+        font-size: 12vh;
+    }
+    #welcome-section h2 {
+        font-size: 7vh;
+    }
+    #welcome-section h3 {
+        font-size: 5vh;
+    }
 }
 
 @media screen and (max-height: 400px) {
