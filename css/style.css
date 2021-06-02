@@ -9,14 +9,16 @@
     transition: 1.5s;
 }
 
-#navbar {
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar, nav a {
     text-shadow: 1px 1px 1px #800080;
     font-family: 'Poppins', Arial, sans-serif;
 }
 
 #welcome-section {
-    /* padding-top: 0px;
-    margin-top: 0px; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -28,19 +30,25 @@
 }
 
 #welcome-section h1 {
-    font-size: 5rem;
+    font-size: 15vh;
     text-shadow: 1px 1px 1px purple;
-    font-family: 'Mate SC';
+    font-family: 'Mate SC', sans-serif, Arial;
+}
+
+#welcome-section h1, 
+#welcome-section h2,  
+#welcome-section h3 {
+    cursor: pointer;
 }
 
 #welcome-section h2 {
-    font-size: 4rem;
+    font-size: 9vh;
     text-shadow: 1px 1px 1px purple;
-    font-family: 'Mate SC';
+    font-family: 'Mate SC', sans-serif, Arial;
 }
 
 #welcome-section h3 {
-    font-size: 3rem;
+    font-size: 6vh;
     text-shadow: 1px 1px 2px red;
     font-family: 'Oswald', Arial, sans-serif;
 }
@@ -52,7 +60,7 @@
 }
 
 nav {
-    background: linear-gradient(95deg, #0a0a0a, #181616);
+    background: linear-gradient(10deg, #0a0a0a, #181616);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 2px 2px 3px 1px purple;  /* Black theme #161616 */
     position: fixed;
@@ -67,7 +75,7 @@ nav {
     opacity: 0.9;
 }
 
-nav ul li a {
+nav ul li a, nav a {
     color: white;
 }
 
@@ -79,10 +87,6 @@ nav ul li a {
 #navbar li {
     padding-right: 40px;
     letter-spacing: 1.5px;
-}
-
-#navbar h1 {
-    cursor: pointer;
 }
 
 #navbar a,
@@ -103,7 +107,7 @@ article a  {
 }
 
 #projects {
-    background: linear-gradient(95deg, #0a0a0a, #181616);
+    background: linear-gradient(10deg, #0a0a0a, #181616);
     height: 100%;
     justify-content: center;
     text-align: center;
@@ -126,7 +130,7 @@ article a  {
 
 #projects img:hover {
     transform: scale(0.9);
-    transition: 1s;
+    transition: transform 1.5s;
     filter: grayscale(1.1);
 }
 
@@ -143,7 +147,8 @@ article a  {
 #skills {
     background: radial-gradient(ellipse at top, #e0d9d9, transparent),
     radial-gradient(ellipse at bottom, #8a8181, transparent);
-    height: 110vh;
+    height: 100%;
+    padding-bottom: 50px;
 }
 
 #skills-distribution {
@@ -160,9 +165,23 @@ article a  {
 
 #skills h1 {
     padding-top: 35px;
-    font-size: 35px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
+}
+
+#soft p {
+    font-family: 'Poppins', sans-serif, Arial;
+    color: black;
+}
+
+#hard p {
+    font-family: 'Mate SC', Courier, monospace;
+}
+
+#soft h1, 
+#hard h1 {
+    font-size: 36px;
 }
 
 #soft {
@@ -173,9 +192,17 @@ article a  {
 }
 
 #hard img {
-    height: 40%;
-    width: 11%;
     padding-top: 30px;
+}
+
+#hard .hm2, #hard .hm4 {
+    height: 23%;
+    width: 14%;
+}
+
+#hard .hm1, #hard .hm3 {
+    height: 20%;
+    width: 11%;
 }
 
 #hard {
@@ -192,13 +219,15 @@ article a  {
 
 #about {
     text-align: center;
-    padding: 4% 10px 10px 10px;
+    padding: 2% 20% 10px 20%;
     font-size: 19px;
+    font-family: 'Poppins', sans-serif, Arial;
+    color: black;
 }
 
 #contact {
     background: linear-gradient(45deg, rgb(107, 29, 107), #111111);
-    height: 50vh;
+    height: 100%;
 }
 
 #contact ul li {
@@ -257,9 +286,9 @@ article a  {
 }
 
 footer {
-    background: linear-gradient(95deg, #0a0a0a, #181616);
+    background: linear-gradient(10deg, #0a0a0a, #181616);
     color: white;
-    height: 20vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -288,6 +317,9 @@ footer .fp1 a:hover {
     transition: 0.5s;
 }
 
+
+
+
 @media (max-width: 1500px) {
     nav { 
         padding: 3% 2% 3% 5%;
@@ -295,7 +327,7 @@ footer .fp1 a:hover {
     }
 }
 
-@media only screen and (max-width: 760px) {
+@media screen and (max-width: 760px) {
     #navbar, header {
         transition: 1.5s;
     }
@@ -319,6 +351,19 @@ footer .fp1 a:hover {
     }
 }
 
+@media (min-width: 660px) {
+    nav li a:hover, nav h1 a:hover {
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 0 3px 0 0 purple;
+        padding-bottom: 15%; /* Black theme #161616 */
+    }
+    nav h1 a:hover {
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 0 4px 0 0 purple;
+        padding-bottom: 3%; /* Black theme #161616 */
+    }
+}
+
 @media (max-width: 440px) {
     #navbar ul {
         flex-direction: column; 
@@ -338,12 +383,23 @@ footer .fp1 a:hover {
     }
 }
 
-@media (min-height: 1000px) {
+@media screen and (max-height: 400px) {
     nav {
-        padding: 10% 4% 10% 10%;
+        padding: 2% 1% 2% 2%;
     }
 
-    #projects, .project-tile {
-        padding: 5px;
+    #navbar li {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    nav {
+        padding: 1% 1% 1% 1%;
+    }
+    
+    #navbar li {
+        padding-right: 15px;
+        letter-spacing: 1px;
     }
 }
