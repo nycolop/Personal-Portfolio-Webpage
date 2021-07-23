@@ -16,9 +16,9 @@
   - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
-<!-- - [Acknowledgements](#acknowledgements) -->
 
 <!-- OVERVIEW -->
+<!-- A image or gif demo of the project, where I can see the demo and what I learned or others things related to the project -->
 
 ## Overview
 
@@ -28,22 +28,21 @@
 - Here you will see a project where I learned a lot about Html and Css.
 
 ### Built With
-
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+<!-- Frameworks and Languages, etc used for making the web -->
 
 - [CSS](https://www.w3schools.com/css/)
 - [HTML](https://www.w3schools.com/html/)
 
 ## Features
+<!-- List of features of the application -->
 
-<!-- List the features of your application or follow the template. -->
 This is a Personal Portfolio where you can see Portfolio and contact things.
 
-<!-- ## Acknowledgements
-
-This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
+<!-- ## Acknowledgements -->
+<!-- any articles or add-ons/plugins that helps you to complete the project -->
 
 ## Contact
 
 - Website [Personal Portfolio](https://necogamy.github.io/Personal-Portfolio-Webpage/)
 - GitHub [@necogamy](https://github.com/necogamy)
+- LinkedIn [Nicolás López](https://www.linkedin.com/in/nicogamy/)
