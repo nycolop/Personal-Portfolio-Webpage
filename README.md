@@ -2,7 +2,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://necogamy.github.io/Personal-Portfolio-Webpage/">
+    <a href="https://nycolop.github.io/Personal-Portfolio-Webpage/">
       Here you can see this project
     </a>
   </h3>
@@ -24,7 +24,7 @@
 
 ![screenshot](media/page.png)
 
-- Here you can see the project: https://necogamy.github.io/Personal-Portfolio-Webpage
+- Here you can see the project: https://nycolop.github.io/Personal-Portfolio-Webpage
 - Here you will see a project where I learned a lot about Html and Css.
 
 ### Built With
@@ -43,6 +43,6 @@ This is a Personal Portfolio where you can see Portfolio and contact things.
 
 ## Contact
 
-- Website [Personal Portfolio](https://necogamy.github.io/Personal-Portfolio-Webpage/)
-- GitHub [@necogamy](https://github.com/necogamy)
-- LinkedIn [Nicolás López](https://www.linkedin.com/in/nicogamy/)
+- Website [Personal Portfolio](https://nycolop.github.io/Personal-Portfolio-Webpage/)
+- GitHub [@necogamy](https://github.com/nycolop)
+- LinkedIn [Nicolás López](https://www.linkedin.com/in/nycolop/)
